@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 4</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		*{
+    	font-family: 'Poppins', sans-serif;
+    	}    
+
+
+
+		.container{
+			float: left;
+            
+
+			padding: 5px;
+		}
+
+		.center{
+			display: flex;
+		/*	justify-content: center;*/
+		}
+
+
+
+		.clear{
+			clear: left;
+		}
+
+		h3{
+			width: 70%;
+			margin: auto;
+			line-height: 5px;
+			padding: 20px;
+			border-left: 5px solid red;
+
+		}
+		h2{
+			padding-top: 20px;
+			line-height: 0.5px;
+		}
+
+		.sec-5{
+			width: 70%;
+			margin: auto;
+
+		}
+
+		.float{
+			float: left;
+			
+		}
+
+		.pad{
+			padding: 10px;
+			padding-top: 20px;
+		}
+
+		.class-img{
+			width: 300px;
+			height: 200px;
+
+		}
+
+		.class-img3{
+			width: 195px;
+			height: 100px;
+
+		}
+
+		.class-img2{
+			width: 230px;
+			height: 130px;
+
+		}
+
+		.class-img4{
+			width: 480px;
+			height: 250px;
+
+		}
+
+		.class-img5{
+			width: 317px;
+			height: 200px;
+
+		}
+
+
+
+
+
+		.img-sec1{
+			width: 280px ; height: 173px
+		}
+
+		.grid{
+			
+			display: flex;
+			justify-content: center;
+		}
+
+		.brd{
+			border:1px solid;
+			margin: 2px;
+		}
+
+		.brd2{
+			border:1px solid white;
+			margin: 2px;
+		}
+
+		.back-img{
+			background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(7.jpg);
+			background-size: cover;
+			
+			 min-height: 400px; 
+		}
+
+		.back-img2{
+			background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(12.jpg);
+			background-size: cover;
+			
+			 min-height: 400px; 
+		}
+		.sec-3-content{
+			width: 70%;
+			margin:auto;
+			color: white;
+
+		}
+
+		.sec-8-1{
+			
+	     box-sizing: border-box;
+         width: 60%;
+         float: left;
+         padding-left:15%;
+    /*padding-right: 5%!important;*/
+   
+		}
+
+
+
+		.sec-8-3{
+			
+	        box-sizing: border-box;
+            width: 60%;
+            float: right;
+            padding-right:15%;
+    /*padding-right: 5%!important;*/
+   
+		}
+
+		.sec-8-2{
+			background-color: #363636;
+			box-sizing: border-box;
+			width: 24%;
+			height: 700px;
+    
+           float: left;
+           padding-left: 8px;
+           padding-right: 8px;
+
+           margin-right: 15px;
+           vertical-align: top;
+    
+		}
+		.sec-8-4{
+			background-color: #363636;
+			box-sizing: border-box;
+			width: 24%;
+			height: 700px;
+    
+            float: right;
+            padding-left: 8px;
+            padding-right: 8px;
+
+            margin-right: 15px;
+            vertical-align: top;
+    
+		}
+
+		.centered-thing {
+            width: 72%;
+            margin: 0 auto;
+            background-color: f4f4f4;
+}
+
+
+  @media only screen and (max-width: 768px){
+  	/*div{
+  		width: 100%;
+  	}*/
+
+  	[class*="col-"] {
+  width: 100%;
+}
+  }
+
+
+
+	</style>
+</head>
+
+
+
+<body>
+
+	<!-- section 1 -->
+	<div style="width: 90%;margin: auto;">
+		<h4 style="float: left;">Welcome to BBC.com</h4>
+		<h4 style="float: right;">Thursday,5 November</h4>
+	</div>
+
+	<div class=" clear center" style="margin-left: 5%;margin-right: 5%">
+		<div class="col- container">
+			<img  src="1.jpg">
+		</div>
+
+		<div class="col- container">
+			<img class="img-sec1" src="w.jpg">
+			<img class="img-sec1" src="w.jpg">
+		</div>
+
+		<div class="col- container">
+			<img class="img-sec1" src="w.jpg">
+			<img class="img-sec1" src="w.jpg">
+		</div>
+	</div>
+
+
+	<!-- section 2 -->
+    
+    <section class=" pad"><h3>News</h3></section>
+
+    <div class="col- grid">
+         <div class="brd">
+         	<img  class=" class-img" src="9.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+    	<div class="brd">
+         	<img  class=" class-img" src="9.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+         <div class="brd">
+         	<img  class=" class-img" src="9.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+        
+    </div>
+
+    <!-- section 3 -->
+
+    <section class="pad"><h3>Sports</h3></section>
+
+    <div class="grid">
+         <div class="brd">
+         	<img  class=" class-img" src="13.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+    	<div class="brd">
+         	<img  class=" class-img" src="13.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+         <div class="brd">
+         	<img  class=" class-img" src="13.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+        
+    </div>
+
+    <!-- section 4 -->
+
+    <section class="pad"><h3>US Election 2020</h3></section>
+
+    <div class="grid">
+         <div class="brd">
+         	<img  class=" class-img" src="15.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+    	<div class="brd">
+         	<img  class=" class-img" src="15.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+         <div class="brd">
+         	<img  class=" class-img" src="15.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+        
+    </div>
+
+    <!-- section 5 -->
+
+        <section class="pad"><h3>Singapore Weather</h3></section>
+        <div class="sec-5">
+        	<img  src="20.jpg">
+        	<img  src="20.jpg">
+        	<img  src="20.jpg">
+        	<img  src="20.jpg">
+        </div>
+
+         
+
+<!-- section 6
+	 -->
+
+	 <div class="back-img">
+<section class="sec-3-content">
+			<h2>Future Planet</h2>
+			<section style="padding: 10px;"><p>Solutions for a sustainable world</p></section>
+			</section>
+
+    <div class="grid ">
+         <div class="brd2">
+         	<img  class=" class-img" src="17.jpg">
+         	<p align="center" style="color: white">Title of the Blog</p>
+         </div>
+    	<div class="brd2">
+         	<img  class=" class-img" src="17.jpg">
+         	<p align="center" style="color: white">Title of the Blog</p>
+         </div>
+         <div class="brd2">
+         	<img  class=" class-img" src="17.jpg">
+         	<p align="center" style="color: white">Title of the Blog</p>
+         </div>
+        
+    </div>
+
+</div>
+
+
+<!-- section 7 -->
+
+ <section class="pad"><h3>Asia News</h3></section>
+
+    <div class="grid">
+         <div class="brd">
+         	<img  class=" class-img2" src="10.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+    	<div class="brd">
+         	<img  class=" class-img2" src="10.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+         <div class="brd">
+         	<img  class=" class-img2" src="10.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+
+         <div class="brd">
+         	<img  class=" class-img2" src="10.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+        
+    </div>
+<!-- 
+section 8
+ -->
+
+ <div style="" >
+    <section class="pad"><h3>Editor's Picks</h3></section>
+    <div class="">
+   	<div class="sec-8-1">
+
+   		<img src="14.jpg">
+
+
+   		<div class="grid">
+         <div class="brd">
+         	<img  class=" class-img3" src="11.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+    	<div class="brd">
+         	<img  class=" class-img3" src="11.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+         <div class="brd ">
+         	<img  class=" class-img3" src="11.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+         <br>
+         
+     
+    </div>
+
+   		
+   	
+
+   	<div class="">
+
+   		
+
+   		<div class="grid">
+         <div class="brd">
+         	<img  class=" class-img3" src="11.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+    	<div class="brd">
+         	<img  class=" class-img3" src="11.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+         <div class="brd ">
+         	<img  class=" class-img3" src="11.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+         <br>
+         
+     
+    </div>
+
+   		
+   	</div>
+
+   	</div>
+
+
+   	
+   </div>
+
+<div class="sec-8-2">
+	<div style="background-color: red; margin-left: -8px;margin-right: -8px"><h4 style="color: white;margin: 0px">Latest Business News</h4></div>
+
+   		<ul style="color: white">
+   			<li>
+   				Lockdown: 'I swing between anger, hope, despair'
+   			</li>
+   			<li>
+   				Lockdown: 'I swing between anger, hope, despair'
+   			</li>
+   			<li>
+   				Lockdown: 'I swing between anger, hope, despair'
+   			</li>
+   		</ul>
+   		
+   		
+   	</div>
+
+
+</div>
+
+<!-- section 9 -->
+<section class="back-img2 clear">
+	<div >
+<section class="sec-3-content">
+			<h2>Future Planet</h2>
+			<section style="padding: 10px;"><p>Solutions for a sustainable world</p></section>
+			</section>
+
+    <div class="grid ">
+         <div class="brd2">
+         	<img  class=" class-img" src="17.jpg">
+         	<p align="center" style="color: white">Title of the Blog</p>
+         </div>
+    	<div class="brd2">
+         	<img  class=" class-img" src="17.jpg">
+         	<p align="center" style="color: white">Title of the Blog</p>
+         </div>
+         <div class="brd2">
+         	<img  class=" class-img" src="17.jpg">
+         	<p align="center" style="color: white">Title of the Blog</p>
+         </div>
+        
+    </div>
+
+</div>
+
+
+
+
+</section>
+<!-- 
+section 10 -->
+
+<section class="pad"><h3>Sports</h3></section>
+
+    <div class="grid">
+         <div class="brd">
+         	<img  class=" class-img4" src="13.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+    	<div class="brd">
+         	<img  class=" class-img4" src="13.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+         
+    </div>
+
+    <section style="background-color: #f5f5f5;">
+     	<section style="padding: 10px;"><h3>Featured Video</h3></section>
+	<section class="centered-thing" >
+     
+
+
+		<iframe width="100%" height="550" 
+src="https://www.youtube.com/embed/tgbNymZ7vqY?">
+</iframe>
+	</section>
+
+
+</section>
+
+<div class="centered-thing" style="margin-top: 15px; margin-bottom: 15px;">
+	<div style="background-color: red ; width: 20% ;height: 50px ;" class="float">
+
+		<h5 style="line-height: 1px ; padding: 5px; color: white">BBC World Service</h5>
+		
+	</div>
+
+	<div class="float" style="box-sizing: border-box; width: 80% ; background-color: #2f2f2f;line-height: 5px;padding-left: 5px">
+		<h5 style="color: white">On Air : Newsday</h5>
+		
+	</div>
+</div>
+
+<!-- section 11 -->
+
+
+ <div class="clear"  >
+    <section class="pad"><h3>Editor's Picks</h3></section>
+    <div class="">
+   	<div class="sec-8-3">
+
+   		<img src="14.jpg">
+
+
+   		<div class="grid">
+         <div class="brd">
+         	<img  class=" class-img3" src="11.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+    	<div class="brd">
+         	<img  class=" class-img3" src="11.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+         <div class="brd ">
+         	<img  class=" class-img3" src="11.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+         <br>
+         
+     
+    </div>
+
+   		
+   	
+
+   	<div class="">
+
+   		
+
+   		<div class="grid">
+         <div class="brd">
+         	<img  class=" class-img3" src="11.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+    	<div class="brd">
+         	<img  class=" class-img3" src="11.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+         <div class="brd ">
+         	<img  class=" class-img3" src="11.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+         <br>
+         
+     
+    </div>
+
+   		
+   	</div>
+
+   	</div>
+
+
+   	
+   </div>
+
+<div class=" sec-8-4">
+	<div style="background-color: red; margin-left: -8px;margin-right: -8px"><h4 style="color: white;margin: 0px">Latest Business News</h4></div>
+
+   		<ul style="color: white">
+   			<li>
+   				Lockdown: 'I swing between anger, hope, despair'
+   			</li>
+   			<li>
+   				Lockdown: 'I swing between anger, hope, despair'
+   			</li>
+   			<li>
+   				Lockdown: 'I swing between anger, hope, despair'
+   			</li>
+   		</ul>
+   		
+   		
+   	</div>
+
+
+</div>
+
+<!-- section 12 -->
+
+<section class="pad" style="clear: both;"><h3>Sports</h3></section>
+
+    <div class=" grid">
+
+    	
+         <div class="">
+         	<h4>Equality Matters</h4>
+         	<div class="brd">
+         	<img  class=" class-img4" src="13.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+         </div>
+         
+    	<div class="">
+    		<h4>Equality Matters</h4>
+    		<div class="brd">
+         	<img  class=" class-img4" src="13.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+     </div>
+         
+    </div>
+
+
+   <!--  section 13 -->
+
+   <section class="pad"><h3>US Election 2020</h3></section>
+
+    <div class="grid">
+         <div class="brd">
+         	<img  class=" class-img4" src="15.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+    	<div class="brd">
+         	<img  class=" class-img4" src="15.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+        
+    </div>
+
+
+    <div class="grid">
+         <div class="brd">
+         	<img  class=" class-img5" src="16.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+    	<div class="brd">
+         	<img  class=" class-img5" src="16.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+         <div class="brd">
+         	<img  class=" class-img5" src="16.jpg">
+         	<p align="center">Title of the Blog</p>
+         </div>
+        
+    </div>
+
+    <!-- last section -->
+<section style="background-color: black">
+	<p align="center" style="color: white ; font-size: 12px ; line-height: 40px">Copyright © 2020 BBC. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
+</section>
+  
+
+
+
+</body>
+</html>
