@@ -1,0 +1,145 @@
+<?xml version="1.0"?><!DOCTYPE Report SYSTEM "students.dtd">
+<StudentsDatabase>
+
+<Students>
+
+<!-- Degree Students  -->
+ <DegreeStudents>
+
+ <Student STID="995435245" Name="Ali" Degree="BSc" Status="Degree Student">
+ <Address StNo="406" StName="Main" City="Toronto" Prov="ON"/>
+ <Phone>416-4245979</Phone>
+ <CourseTaken CourseID="c1" />
+ <CourseTaken CourseID="c3" />
+ <CourseTaken CourseID="c4" />
+ <CourseTaken CourseID="c5" />
+ </Student>
+
+ <Student STID="998112455" Name="Fernando" Degree="BEng" Status="Degree Student">
+ <Address StNo="101" StName="Avenue" City="Montreal" Prov="QC"/>
+ <CourseTaken CourseID="c2" />
+ <CourseTaken CourseID="c4" />
+ <CourseTaken CourseID="c8" />
+ <CourseTaken CourseID="c10" />
+ </Student>
+ 
+ <Student STID="993457622" Name="Jason" Degree="BA" Status="Degree Student">
+ <Address StNo="32" StName="Main" City="Winnipeg" Prov="MB"/>
+ <Phone>204-4562983</Phone>
+ <CourseTaken CourseID="c1" />
+ <CourseTaken CourseID="c2" />
+ <CourseTaken CourseID="c3" />
+ </Student>
+
+ <Student STID="996112321" Name="Jun" Degree="BEng" Status="Degree Student">
+ <Address StNo="160" StName="Pembina" City="Winnipeg" Prov="MB"/>
+ <Phone>204-7893242</Phone>
+ <CourseTaken CourseID="c5" />
+ <CourseTaken CourseID="c7" />
+ <CourseTaken CourseID="c10" />
+ </Student>
+
+ <Student STID="995987345" Name="Lee" Degree="BSc" Status="Degree Student">
+ <Address StNo="35" StName="Charlse" City="Toronto" Prov="ON"/>
+ <Phone>647-9982342</Phone>
+ <CourseTaken CourseID="c3" />
+ <CourseTaken CourseID="c4" />
+ <CourseTaken CourseID="c7" />
+ </Student>
+
+ <Student STID="997821345" Name="Leung" Degree="BSc" Status="Degree Student">
+ <Address StNo="11" StName="Yong" City="Toronto" Prov="ON"/>
+ </Student>
+</DegreeStudents>
+
+<!-- Special Students -->
+ <SpecialStudents>
+
+ <Student STID="995267842" Name="Bob" Status="Special Student">
+ <Address StNo="12" StName="Charles" City="Ottawa" Prov="ON"/>
+ <Phone>613-5345660</Phone>
+ <CourseTaken CourseID="c3" />
+ <CourseTaken CourseID="c4" />
+ <CourseTaken CourseID="c5" />
+ </Student>
+
+ <Student STID="997458623" Name="Carlos" Status="Special Student">
+ <Address StNo="5" StName="King" City="Oshawa" Prov="ON"/>
+ <Phone>905-2348638</Phone>
+ </Student>
+
+ <Student STID="996453222" Name="Mark" Status="Special Student">
+ <Address StNo="30" StName="University" City="Ottawa" Prov="ON"/>
+ <Phone>613-4561190</Phone>
+ <CourseTaken CourseID="c1" />
+ <CourseTaken CourseID="c5" />
+ <CourseTaken CourseID="c6" />
+ <CourseTaken CourseID="c7" />
+ </Student>
+
+ <Student STID="997424563" Name="Maria" Status="Special Student">
+ <Address StNo="11" StName="Queen" City="Ottawa" Prov="ON"/>
+ <CourseTaken CourseID="c5" />
+ </Student>
+
+ <Student STID="997345632" Name="Nicolas" Status="Special Student">
+ <Address StNo="13" StName="Cumberland" City="Ottawa" Prov="ON"/>
+ <Phone>613-8932456</Phone>
+ <CourseTaken CourseID="c9" />
+ <CourseTaken CourseID="c10" />
+ </Student>
+
+</SpecialStudents>
+
+</Students>
+
+<!-- Courses -->
+
+<Courses>
+ <Course CourseID="c1" Name="Introduction to Databases" Department="CS">
+ <Acceptance>Degree Student</Acceptance>
+ <Acceptance>Special Student</Acceptance>
+ </Course>
+
+ <Course CourseID="c2" Name="Numerical Methods" Department="CS">
+ <Acceptance>Degree Student</Acceptance>
+ <Acceptance>Special Student</Acceptance>
+ </Course>
+
+ <Course CourseID="c3" Name="Operating Systems" Department="CS">
+ <Acceptance>Degree Student</Acceptance>
+ </Course>
+
+ <Course CourseID="c4" Name="Computer Graphics" Department="CS">
+ <Acceptance>Degree Student</Acceptance>
+ </Course>
+
+ <Course CourseID="c5" Name="Calculus Sci I" Department="MAT">
+ <Acceptance>Special Student</Acceptance>
+ </Course>
+
+ <Course CourseID="c6" Name="Complex Variables" Department="MAT">
+ <Acceptance>Degree Student</Acceptance>
+ <Acceptance>Special Student</Acceptance>
+ </Course>
+
+ <Course CourseID="c7" Name="Groups and Symmetry" Department="MAT">
+ <Acceptance>Degree Student</Acceptance>
+ </Course>
+
+ <Course CourseID="c8" Name="Introduction to Economics" Department="ECO">
+ <Acceptance>Degree Student</Acceptance>
+ <Acceptance>Special Student</Acceptance>
+ </Course>
+
+ <Course CourseID="c9" Name="Microeconomic Theory" Department="ECO">
+ <Acceptance>Degree Student</Acceptance>
+ </Course>
+
+ <Course CourseID="c10" Name="Energy and Resource" Department="ECO">
+ <Acceptance>Degree Student</Acceptance>
+ </Course>
+
+</Courses>
+
+</StudentsDatabase>
