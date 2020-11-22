@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-16LE"?>
+
+<!ELEMENT Report (Students,Courses)>
+<!ELEMENT Students (DegreeStudents,SpecialStudents)>
+<!ELEMENT Courses (Course+)>
+<!ELEMENT DegreeStudents (Student+)>
+<!ELEMENT SpecialStudents (Student+)>
+<!ELEMENT Student (Address,(Phone?),(CourseTaken*))>
+<!ELEMENT Address EMPTY>
+<!ELEMENT CourseTaken EMPTY>
+<!ELEMENT Phone (#PCDATA)>
+<!ELEMENT Course (Acceptance+)>
+<!ELEMENT Acceptance (#PCDATA)>
+<!ATTLIST CourseTaken CourseID IDREF #REQUIRED>
+<!ATTLIST Address StNo CDATA #REQUIRED>
+<!ATTLIST Address StName CDATA #REQUIRED>
+<!ATTLIST Address City CDATA #REQUIRED>
+<!ATTLIST Address Prov CDATA #REQUIRED>
+<!ATTLIST Student STID CDATA #REQUIRED>
+<!ATTLIST Student Name CDATA #REQUIRED>
+<!ATTLIST Student Degree CDATA #IMPLIED>
+<!ATTLIST Student Status CDATA #REQUIRED>
+<!ATTLIST Course CourseID ID #REQUIRED>
+<!ATTLIST Course Name CDATA #REQUIRED>
+<!ATTLIST Course Department CDATA #REQUIRED>
