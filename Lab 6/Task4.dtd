@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE email
+[
+
+<!ELEMENT email (from,to,content)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT content (person+,course,exercise+)>
+<!ELEMENT person (#PCDATA)>
+<!ELEMENT course (#PCDATA)>
+<!ELEMENT exercise (topic,description)>
+<!ELEMENT topic (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+
+]>
