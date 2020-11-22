@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="UTF-16LE"?>
 
+<!-- Two Tables students and Courses  -->
+
 <!ELEMENT Report (Students,Courses)>
+
+<!-- Students -->
+<!-- Inside Students element , there could be either degree students or special students -->
+
 <!ELEMENT Students (DegreeStudents,SpecialStudents)>
+
+
 <!ELEMENT Courses (Course+)>
+
+<!-- In degreeStudents element there could me 1 or more students  -->
+
 <!ELEMENT DegreeStudents (Student+)>
+
+<!-- In SpecialStudents element there could me 1 or more students  -->
+
 <!ELEMENT SpecialStudents (Student+)>
+
+<!-- Elements within each Student element -->
+
 <!ELEMENT Student (Address,(Phone?),(CourseTaken*))>
 <!ELEMENT Address EMPTY>
 <!ELEMENT CourseTaken EMPTY>
-<!ELEMENT Phone (#PCDATA)>
+<!-- zero or more -->
+<!ELEMENT Phone (#PCDATA)>    
+
+<!-- Courses -->
 <!ELEMENT Course (Acceptance+)>
 <!ELEMENT Acceptance (#PCDATA)>
+
+<!-- Attributes -->
 <!ATTLIST CourseTaken CourseID IDREF #REQUIRED>
 <!ATTLIST Address StNo CDATA #REQUIRED>
 <!ATTLIST Address StName CDATA #REQUIRED>
