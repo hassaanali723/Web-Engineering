@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Hassaan's Calculator
+</title>
+
+<script type="text/javascript">
+	var z;
+
+    function solve() 
+         { 
+             let x = document.getElementById("text").value 
+             let y = eval(x) 
+             document.getElementById("text").value = y 
+         }
+    function inv(){
+
+
+  			let x = document.getElementById("text").value 
+             let y = eval(x) 
+             document.getElementById("text").value = (1/y) 
+         }
+
+    function sq(){
+
+
+  			let x = document.getElementById("text").value 
+             let y = eval(x) 
+             document.getElementById("text").value = Math.sqrt(y) 
+         }
+
+
+    function po(){
+    	let x = document.getElementById("text").value 
+             let y = eval(x) 
+             document.getElementById("text").value = (y*y) 
+
+}
+
+	function cleartext(){
+		document.getElementById("text").value = "" ;
+		z='';
+}
+
+function MC(){
+z=" "
+
+
+
+
+}
+function MS(){
+
+z=document.getElementById("text").value;
+
+
+}
+
+function MR(){
+	document.getElementById("text").value = z;
+
+
+}
+function M(){
+	z+=document.getElementById("text").value ;
+
+
+
+
+}
+
+  	function wre(id){
+
+
+  		var a = document.querySelector('#'+ id).value;
+		
+		document.querySelector('#text').value+=a;
+
+  	}
+  	function minus(){
+  	
+             document.getElementById("text").value = -1*document.getElementById("text").value 
+
+  	}
+	
+</script>
+
+<!-- CSS -->
+<style type="text/css">
+	
+@media only screen and (max-width: 600px) {
+		  body {
+		    background-color: rgb(47, 145, 73);
+		  }
+		  button{
+			width:20px;
+			height: 20px;
+		  }
+		  input{
+			width: 93%;
+			height: 50px;
+			padding-left:10px;
+			padding-right:10px;
+		  }
+		}
+.button{
+
+height: 50px;
+width: 50px
+
+
+}
+
+</style>
+</head>
+<body>
+<div style="border: solid 1px; width: 267px"  >
+
+<input type="text" id="text" value="" style="width: 263px" >
+<br>
+<br>
+
+
+<input type="button"  value="MC" onclick="MC()"  class="button">		
+
+<input type="button" value='0' id="A" onclick="wre('A')"  class="button">	
+
+
+<input type="button" value="1" id="B" onclick="wre('B')" class="button">
+
+
+<input type="button" value="2" id="C" onclick="wre('C')" class="button">
+
+<input type="button" value="+" id="HF" onclick="wre('HF')" class="button">
+<br>
+<br>
+<input type="button"  value="MS" onclick="MS()" class="button">		
+
+<input type="button" value="3" id="D" onclick="wre('D')" class="button">	
+
+
+<input type="button" value="4" id="E" onclick="wre('E')" class="button">
+
+
+<input type="button" value="5" id="F" onclick="wre('F')" class="button">
+
+<input type="button" value="-" id="HR" onclick="wre('HR')" class="button">
+<br>
+<br>
+<input type="button"  value="MR" onclick="MR()" class="button">		
+
+<input type="button" value="6" id="G" onclick="wre('G')" class="button">	
+
+
+<input type="button" value="7" id="H" onclick="wre('H')" class="button">
+
+
+<input type="button" value="8" id="I" onclick="wre('I')" class="button">
+
+<input type="button" value="*" id="HS" onclick="wre('HS')" class="button">
+<br>
+<br>
+<input type="button"  value="M+" onclick="M()" class="button">		
+
+<input type="button" value="9" id="J" onclick="wre('J')" class="button">	
+
+
+<input type="button" value="+-" onclick="minus()" class="button">
+
+
+<input type="button" value="=" onclick="solve()" class="button">
+
+<input type="button" value="/" id="HA" onclick="wre('HA')" class="button">
+<br>
+<br>
+<input type="button"  value="1/x" onclick="inv()" class="button">		
+
+<input type="button" value=".0" id="DA" onclick="wre('DA')" class="button">	
+
+
+<input type="button" value="x2" id="HJ" onclick="po()" class="button">
+
+
+<input type="button" value="√" id="BB" onclick="sq()" class="button">
+
+<input type="button" value="C" onclick="cleartext()" class="button">
+
+
+
+</div>
+
+</body>
+</html>

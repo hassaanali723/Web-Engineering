@@ -2,7 +2,7 @@
 
 <!-- Two Tables students and Courses  -->
 
-<!ELEMENT Report (Students,Courses)>
+<!ELEMENT StudentsDatabase (Students,Courses)>
 
 <!-- Students -->
 <!-- Inside Students element , there could be either degree students or special students -->
