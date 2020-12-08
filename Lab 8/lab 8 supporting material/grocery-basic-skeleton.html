@@ -24,41 +24,37 @@
        date = a.toLocaleDateString(undefined,options);
        time = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
       
-        $("li#one").click(function(){
+        $("li").click(function(){
         $("li").find("span").remove();
-   
-        $('li#one').append("<span class='date'>"+date+" at "+time+"</span>");
-    
-
+        var a=this.id;
+       console.log(a);
+        $("#"+a).append("<span class='date'>"+date+" at "+time+"</span>");
 
       });
 
-      $("li#two").click(function(){
-        $("li").find("span").remove();
+      // $("li#two").click(function(){
+      //   $("li").find("span").remove();
    
-        $('li#two').append("<span class='date'>"+date+" at "+time+"</span>");
+      //   $('li#two').append("<span class='date'>"+date+" at "+time+"</span>");
+  
+
+      // });
+
+      // $("li#three").click(function(){
+      //   $("li").find("span").remove();
+   
+      //   $('li#three').append("<span class='date'>"+date+" at "+time+"</span>");
+    
+      // });
+
+      // $("li#four").click(function(){
+      //   $("li").find("span").remove();
+   
+      //   $('li#four').append("<span class='date'>"+date+" at "+time+"</span>");
     
 
 
-      });
-
-      $("li#three").click(function(){
-        $("li").find("span").remove();
    
-        $('li#three').append("<span class='date'>"+date+" at "+time+"</span>");
-    
-
-
-      });
-
-      $("li#four").click(function(){
-        $("li").find("span").remove();
-   
-        $('li#four').append("<span class='date'>"+date+" at "+time+"</span>");
-    
-
-
-      });
 
 
       });
@@ -67,9 +63,6 @@
      
 
    </script>
-
-
-
 
 
   </head>
