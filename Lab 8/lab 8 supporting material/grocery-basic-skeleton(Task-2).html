@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <style type="text/css">
+
+        .style{
+          font-family: calibri;
+          padding-left: 5%;
+          font-size: 15px;
+    
+      }
+      </style>
+    <title>JavaScript &amp; jQuery - Chapter 7: Introducing jQuery - Event Object</title>
+    <link rel="stylesheet" href="css/c07.css" />
+     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+ 
+     
+
+     <script>
+        $(document).ready(function(){
+          
+        $("li").click(function(){
+           $("#details").empty();
+          var id=this.id;
+          var status =''; 
+          if (id==='one'){
+            status='Available'
+          }
+        if (id==='two'){
+            status='Important'
+          }
+        if (id==='three'){
+            status='Important'
+          }
+        if (id==='four'){
+            status='Available'
+          }
+        
+        
+        
+        
+           
+        $('#details').append('<p>Item '+$(this).text()+'</p>');
+        $('#details').append('<p>Status '+status+'</p>');
+        $('#details').append('<p>Event '+"Onclick"+'</p>');
+        
+          });
+        });
+        $(document).ready(function(){
+          
+        $("li").mouseover(function(){
+          $("#details").empty();
+          var id=this.id;
+          var status ='';
+          if (id==='one'){
+            status='Available'
+          }
+        if (id==='two'){
+            status='Important'
+          }
+        if (id==='three'){
+            status='Important'
+          }
+        if (id==='four'){
+            status='Available'
+          }
+        
+        
+        
+        
+           
+        $('#details').append('<p>Item '+$(this).text()+'</p>');
+        $('#details').append('<p>Status '+status+'</p>');
+        $('#details').append('<p>Event '+"Hover"+'</p>');
+        
+          });
+        });
+        </script>
+
+  </head>
+  <body>
+    <div id="page">
+      <h1 id="header">List</h1>
+      <h2>Buy groceries</h2>
+      <ul>
+        <li id="one" class="hot"><em>fresh</em> figs</li>
+        <li id="two" class="hot">pine nuts</li>
+        <li id="three" class="hot">honey</li>
+        <li id="four">balsamic vinegar</li>
+      </ul>
+      <div id="details" style="width: 80%;height: 300px;background-color: white;margin:auto"></div>
+    </div>
+    <script src="js/jquery-1.11.0.js"></script>
+  </body>
+</html>
