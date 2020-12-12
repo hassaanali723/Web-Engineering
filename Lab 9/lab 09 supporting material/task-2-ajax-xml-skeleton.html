@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+
+<body>
+
+<button type="button" id='submitButton'>Get my CD collection</button>
+<br><br>
+<table id="demo"></table>
+<div id="error"></div>
+<script src="jquery-3.2.1.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		alert('jQuery is working');
+		$('#submitButton').on('click', function(){  
+			alert('click is working');
+			// your ajax call here e.g. $.ajax({ url: 'cd_catalog.xml', ...})
+		
+		
+		});
+	});
+</script>
+
+</script>
+
+</body>
+</html>
